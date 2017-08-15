@@ -1,0 +1,21 @@
+{
+    "name": "DallasSensor",
+    "description": "Simple encapsulation library for [DallasTemperature](https://github.com/milesburton/Arduino-Temperature-Control-Library) library, used for hiding OneWire and global variables.",
+    "keywords": "dallas, temperature, sensor",
+    "authors": {
+        "name": "David Maixner",
+        "email": "dmaixner@gmail.com",
+        "url": "https://github.com/dmaixner",
+        "maintainer": true
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dmaixner/esp8266-dallassensor"
+    },
+    "version": "1.0.0",
+    "frameworks": "arduino",
+    "platforms": "espressif8266",
+    "dependencies": {
+        "DallasTemperature": "dmaixner/Arduino-Temperature-Control-Library"
+    }
+}
