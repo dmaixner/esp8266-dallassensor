@@ -1,5 +1,6 @@
-#include "DallasSensor.h"
 #include <OneWire.h>
+#include <DallasTemperature.h>
+#include "DallasSensor.h"
 
 DallasTemperature *sensors = NULL;
 

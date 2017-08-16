@@ -1,8 +1,6 @@
 #ifndef _dallas_sensor_h
 #define _dallas_sensor_h
 
-#include <DallasTemperature.h>
-
 class DallasSensor
 {
   public:
