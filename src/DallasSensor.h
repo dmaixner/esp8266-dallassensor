@@ -6,7 +6,9 @@ class DallasSensor
   public:
     void begin(const byte dataPin);
     void printInfo();
+    void readTemperatures();
     float getTemperature(const byte index);
+    byte getDeviceCount();
 };
 
 extern DallasSensor Dallas;

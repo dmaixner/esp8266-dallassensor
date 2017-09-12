@@ -8,12 +8,14 @@ Simple encapsulation library for [DallasTemperature](https://github.com/milesbur
 
 void setup()
 {
+    Serial.begin(9600);
     Dallas.begin(13); // 13 => data pin
     Dallas.printInfo();
 }
 
 void loop()
 {
+    Dallas.readTemperatures();
     Serial.println("Temperature: " + String(Dallas.getTemperature(0))); // 0 => index of the first sensor
     delay(60000);
 }

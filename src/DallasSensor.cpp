@@ -12,7 +12,7 @@ void DallasSensor::begin(const byte dataPin)
     sensors->begin();
     // sensors->setResolution(12);
     // sensors->setWaitForConversion(true);
-    // sensors->seCheckForConversion(true);
+    // sensors->setCheckForConversion(true);
 }
 
 void DallasSensor::printInfo()
@@ -26,10 +26,19 @@ void DallasSensor::printInfo()
     Serial.println("----------------------");
 }
 
-float DallasSensor::getTemperature(const byte index)
+void DallasSensor::readTemperatures()
 {
     sensors->requestTemperatures();
+}
+
+float DallasSensor::getTemperature(const byte index)
+{
     return sensors->getTempCByIndex(index);
+}
+
+byte DallasSensor::getDeviceCount()
+{
+    return sensors->getDeviceCount();
 }
 
 DallasSensor Dallas;
